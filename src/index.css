@@ -1,0 +1,55 @@
+#root {
+    width: auto;
+}
+
+.container {
+    max-width: 1024px;
+    margin-inline: auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.card {
+    background-color: #eee;
+    padding: 1rem;
+    max-width: 500px;
+}
+
+.cards-container {
+    max-width: 991px;
+    margin-inline: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+div:has(img) {
+    width: 300px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+div:has(button) {
+    margin-block: 40px;
+    padding: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    border: 1px solid;
+    padding: 6px 10px;
+}
